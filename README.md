@@ -11,22 +11,6 @@ This project implements a secure authentication system in React with the followi
 - **Redux Toolkit** (State Management)
 - **React Router** (Navigation & Protected Routes)
 
-## Folder Structure
-```
-/assignment-1
- ├── /src
- │   ├── /components
- │   │   ├── Login.js
- │   │   ├── Dashboard.js
- │   │   ├── ProtectedRoute.js
- │   ├── /redux
- │   │   ├── store.js
- │   │   ├── authSlice.js
- │   ├── App.js
- │   ├── index.js
- ├── package.json
- ├── README.md
-```
 
 ## Features
 ### 1️⃣ Authentication
@@ -58,7 +42,7 @@ This project implements a secure authentication system in React with the followi
 
 3. Start the project:
    ```sh
-   npm start
+   npm run dev
    ```
 
 ## Security Measures in Redux

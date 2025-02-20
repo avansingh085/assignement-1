@@ -1,15 +1,15 @@
-// components/Navbar.jsx
 import { Link } from 'react-router-dom';
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { logoutSuccess } from '../features/auth';
-
+import {successToast} from '../components/Toast'
 export default function Navbar() {
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
 
   const handleLogout = () => {
    dispatch(logoutSuccess());
+      successToast("logout successfully!");
     localStorage.removeItem('user');
   };
 

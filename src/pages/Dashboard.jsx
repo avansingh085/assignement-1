@@ -6,23 +6,21 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-hidden flex flex-col items-center justify-center">
-      {/* Water Drop Animation */}
+     
       <div className="absolute left-1/2 top-0 -translate-x-1/2 animate-waterDrop">
         <div className="w-6 h-6 bg-blue-500 rounded-full shadow-2xl shadow-blue-400 opacity-80 animate-fadeInOut blur-sm"></div>
       </div>
 
-      {/* Ripple Effect */}
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-waterRipple">
         <div className="w-40 h-40 border-4 border-blue-500 rounded-full opacity-10 blur-xl"></div>
       </div>
 
-      {/* Neon Glowing Dashboard */}
       <div className="relative z-10 text-center">
         <h1 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-500 animate-pulse">
           Welcome, {user?.email || "Guest"}!
         </h1>
 
-        {/* Crazy Grid Cards */}
+      
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 px-6">
           {["🔥", "⚡", "💎", "🚀", "🎮", "🌌"].map((emoji, index) => (
             <div
@@ -41,7 +39,6 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Crazy Floating Lights */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
         {Array(6)
           .fill(0)
